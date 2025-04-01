@@ -1,0 +1,41 @@
+# Rust build artifacts
+/target/               # Output directory for compiled code
+**/*.rs.bk            # Rust backup files
+*.pdb                 # Program Database files (debugging symbols)
+
+# Cargo.lock should be committed for applications but not for libraries
+# See https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
+# Uncomment the next line if this is a library crate
+# Cargo.lock
+
+# IDE and editor files
+.idea/                # JetBrains IDEs (IntelliJ, CLion, etc.)
+.vscode/              # Visual Studio Code
+*.swp                 # Vim swap files
+*.swo                 # More Vim swap files
+*~                    # Backup files created by many text editors
+
+# OS-specific files
+## Windows
+Thumbs.db             # Windows thumbnail cache
+ehthumbs.db           # Windows icon cache
+Desktop.ini           # Windows desktop configuration
+*.exe                 # Windows executable files
+*.dll                 # Windows dynamic link libraries
+
+## macOS
+.DS_Store             # macOS directory metadata
+.AppleDouble          # macOS resource fork
+.LSOverride           # macOS hidden files
+Icon                  # macOS custom icons
+._*                   # macOS resource forks and attributes
+
+## Linux
+.directory            # KDE directory preferences
+.Trash-*              # Linux trash folder
+
+# General
+*.log                 # Log files
+.env                  # Environment variables
+
+/target
