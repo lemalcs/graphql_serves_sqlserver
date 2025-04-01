@@ -1,0 +1,17 @@
+[package]
+name = "graphql_serves_sqlserver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web="4.10.2"
+actix-rt="2.10.0"
+async-graphql = "7.0.16"
+async-graphql-actix-web = "7.0.16"
+tiberius = { version="0.12.3" ,features = ["sql-browser-tokio","chrono"]}
+tokio = { version = "1.39.2",features = [
+    "rt-multi-thread",
+    "net",
+    "macros",
+] }
+tokio-util = {version = "0.7.11",features = ["compat"]}
