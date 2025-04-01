@@ -39,3 +39,6 @@ Icon                  # macOS custom icons
 .env                  # Environment variables
 
 /target
+
+# IDE specific files
+.idea/           # JetBrains IDEs (IntelliJ, CLion, etc.)
